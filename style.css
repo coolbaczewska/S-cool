@@ -24,11 +24,12 @@ body {
 }
 
 .icon {
-    width: 30%;
+    width: 28%;
 }
 
 a {
     text-decoration: none;
+    color: #231F20;
 }
 
 h1 {
@@ -45,6 +46,10 @@ h2 {
     position: relative;
     left: 18px;
     top: 8px;
+}
+
+.header-icon {
+    width: 30%;
 }
 
 /*----GRID----*/
@@ -110,6 +115,25 @@ h2 {
     grid-template-rows: 80px 634px 40px;
 }
 
+.header {
+    display: grid;
+    grid-template-columns: 70px 235px 70px;
+}
+
+.search {
+    grid-column-start: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.back {
+    grid-column-start: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .content {
     display: grid;
     grid-template-columns: 10px 1fr 12px 1fr 10px;
@@ -147,14 +171,14 @@ h2 {
     border-radius: 18px;
 }
 
-.schedule {
+.calendar {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 4;
     background-color: var(--light-green);
     border-radius: 18px;
-    background-image: url("img/schedule.png");
+    background-image: url("img/calendar-tile.png");
     background-repeat: no-repeat;
     background-size: 108%;
 }
@@ -167,8 +191,74 @@ h2 {
 .home,
 .profile,
 .messages {
-    justify-self: center;
-    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*my school page*/
+
+.content-my-school {
+    display: grid;
+    grid-template-columns: 10px 1fr 12px 1fr 10px;
+    grid-template-rows: 300px 130px 180px;
+    row-gap: 10px;
+}
+
+.class-wall {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-radius: 18px;
+    background-image: url("img/school-wall.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.schedule {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-radius: 18px;
+    background-image: url("img/schedule.png");
+    background-repeat: no-repeat;
+    background-size: 118%;
+}
+
+.middle {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 215px auto;
+    column-gap: 10px;
+}
+
+.challenges {
+    background-color: var(--blue);
+    border-radius: 18px;
+}
+
+.score {
+    background-color: var(--light-blue);
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+.score-text{
+    font-size: 20px;
+    font-weight: 700;
+}
+.score-number{
+    font-size: 40px;
 }
 
 
