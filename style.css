@@ -52,6 +52,13 @@ h2 {
     width: 30%;
 }
 
+.header-text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+}
+
 /*----GRID----*/
 
 /*loginpage*/
@@ -104,8 +111,6 @@ h2 {
     padding-top: 14px;
     padding-left: 135px;
 }
-
-
 
 /*frontpage*/
 
@@ -196,7 +201,6 @@ h2 {
     align-items: center;
 }
 
-
 /*my school page*/
 
 .content-my-school {
@@ -260,6 +264,24 @@ h2 {
 .score-number{
     font-size: 40px;
 }
+
+/*calendar*/
+
+.months{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-radius: 18px;
+    background-image: url("img/calendar.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.events{
+
+}
+
 
 
 /*----NAVIGATION-----*/
