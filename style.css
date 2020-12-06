@@ -5,10 +5,6 @@
     --light-blue: #C6EBFE;
 }
 
-
-
-
-
 /*----GENERAL STYLING----*/
 
 body {
@@ -20,7 +16,6 @@ body {
     font-style: normal;
     color: #231F20;
     background-color: white;
-
 }
 
 .icon {
@@ -47,12 +42,15 @@ h2 {
     left: 18px;
     top: 8px;
 }
+h3 {
+    font-size: 20px;
+}
 
 .header-icon {
     width: 30%;
 }
 
-.header-text{
+.header-text {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -257,17 +255,19 @@ h2 {
     top: 0;
     text-align: center;
 }
-.score-text{
+
+.score-text {
     font-size: 20px;
     font-weight: 700;
 }
-.score-number{
+
+.score-number {
     font-size: 40px;
 }
 
 /*calendar*/
 
-.months{
+.months {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 1;
@@ -278,11 +278,28 @@ h2 {
     background-size: 100%;
 }
 
-.events{
-
+.events {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
+.event {
+    display: inline-flex;
+    margin-left: 50px;
+    font-size: 20px;
+    margin-top: 8px;
+}
 
+.event-name {
+    margin-left: 10px;
+}
+
+.date {
+    font-weight: bold;
+    color: var(--blue);
+}
 
 /*----NAVIGATION-----*/
 
@@ -318,7 +335,6 @@ nav {
     font-size: 12px;
 }
 
-
 .nav-links a:hover {
     color: #C2B4B4;
 }
@@ -327,7 +343,6 @@ nav {
     font-weight: 700;
     color: var(--blue);
 }
-
 
 .nav-burger {
     display: none;
@@ -347,14 +362,11 @@ nav {
     align-items: center;
     min-height: 7vh;
     background-color: white;
-
 }
 
 nav div h1 {
     font-size: 12px;
 }
-
-
 
 body {
     overflow-x: hidden;
