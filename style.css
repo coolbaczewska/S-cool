@@ -71,7 +71,7 @@ h3 {
     font-size: 14px;
 }
 
-.last-element{
+.last-element {
     margin-bottom: 70px !important;
 }
 
@@ -98,6 +98,14 @@ h3 {
     display: grid;
     grid-template-rows: 1fr 1fr;
     row-gap: 10px;
+}
+
+.logo {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    align-self: center;
+    justify-self: center;
+    width: 75%;
 }
 
 .username {
@@ -506,6 +514,61 @@ h3 {
     margin: 0 10px 0 10px;
 }
 
+/*write a post*/
+
+.content-write-post {
+    grid-row-start: 2;
+    display: grid;
+    grid-template-rows: 50px 450px 50px 10px 50px;
+    grid-template-columns: 10px auto 10px;
+}
+
+.blue-button {
+    height: 50px;
+    border: none;
+    border-radius: 18px;
+    background-color: var(--blue);
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Lato";
+}
+
+#text {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    height: 15%;
+    border: none;
+    font-size: 16px;
+    font-family: "Lato";
+}
+
+.add-contents {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.post-button {
+    justify-self: end;
+    grid-column-start: 2;
+    width: 25%;
+}
+
+.add-photo {
+    margin-right: 5px;
+}
+
+.add-file {
+    margin-left: 5px;
+}
+
+.publish {
+    grid-column-start: 2;
+    grid-row-start: 5;
+}
+
 /*----READ MORE-----*/
 
 #more,
@@ -543,7 +606,7 @@ nav {
 
 .nav-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 40%;
 }
 
@@ -554,12 +617,11 @@ nav {
 .nav-links a {
     color: black;
     text-decoration: none;
-    letter-spacing: 3px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .nav-links a:hover {
-    color: #C2B4B4;
+    color: var(--blue);
 }
 
 .nav-links .current {
@@ -599,7 +661,7 @@ body {
     overflow-x: hidden;
     position: absolute;
     right: 0px;
-    height: 97vh;
+    height: 100vh;
     bottom: 0;
     background-color: white;
     display: flex;
@@ -613,10 +675,11 @@ body {
 
 .nav-links li {
     opacity: 0;
+    margin: 30px;
 }
 
 .nav-links a {
-    font-size: 12px;
+    font-size: 16px;
     color: black;
 }
 
