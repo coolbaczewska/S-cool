@@ -3,6 +3,7 @@
     --blue: #8ED9FF;
     --light-green: #EBF2E2;
     --light-blue: #C6EBFE;
+    --dark-green: #A6CE39;
 }
 
 /*----GENERAL STYLING----*/
@@ -27,6 +28,11 @@ a {
     color: #231F20;
 }
 
+p {
+    margin-block-start: 5px;
+    margin-block-end: 10px;
+}
+
 h1 {
     font-size: 26px;
     font-weight: 700;
@@ -42,8 +48,11 @@ h2 {
     left: 18px;
     top: 8px;
 }
+
 h3 {
     font-size: 20px;
+    margin-block-start: 10px;
+    margin-block-end: 5px;
 }
 
 .header-icon {
@@ -56,6 +65,21 @@ h3 {
     align-items: center;
     font-size: 18px;
 }
+
+.lower-opacity {
+    opacity: 50%;
+}
+
+/*
+.welcome-sticker{
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    height: 35px;
+    background-color: var(--dark-green);
+}
+*/
+
 
 /*----GRID----*/
 
@@ -96,7 +120,7 @@ h3 {
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 4;
-    background-color: #A6CE39;
+    background-color: var(--dark-green);
     border-radius: 18px;
     width: 90%;
     height: 47.5px;
@@ -121,6 +145,10 @@ h3 {
 .header {
     display: grid;
     grid-template-columns: 70px 235px 70px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    height: 70px;
 }
 
 .search {
@@ -142,6 +170,7 @@ h3 {
     grid-template-columns: 10px 1fr 12px 1fr 10px;
     grid-template-rows: 285px 105px 220px;
     row-gap: 10px;
+    grid-row-start: 2
 }
 
 .my-school {
@@ -189,6 +218,8 @@ h3 {
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: fixed;
+    bottom: 0;
 }
 
 .home,
@@ -197,6 +228,7 @@ h3 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: white;
 }
 
 /*my school page*/
@@ -206,6 +238,7 @@ h3 {
     grid-template-columns: 10px 1fr 12px 1fr 10px;
     grid-template-rows: 300px 130px 180px;
     row-gap: 10px;
+    grid-row-start: 2
 }
 
 .class-wall {
@@ -299,6 +332,63 @@ h3 {
 .date {
     font-weight: bold;
     color: var(--blue);
+}
+
+/*news page*/
+
+.content-news {
+    display: grid;
+    grid-template-columns: 10px auto 10px;
+    grid-row-start: 2;
+}
+
+.news1,
+.news3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: var(--light-green);
+    border-radius: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px 20px 10px 20px;
+
+}
+
+.news2,
+.news4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: var(--green);
+    border-radius: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px 20px 10px 20px;
+}
+
+/*photo gallery page*/
+
+.content-photo-gallery {
+   grid-row-start: 2;
+}
+
+
+
+/*----READ MORE-----*/
+
+#more,
+#more1 {
+    display: none;
+}
+
+#myBtn,
+#myBtn1 {
+    font-family: 'Lato';
+    padding: 1px 0 10px 0;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 /*----NAVIGATION-----*/
