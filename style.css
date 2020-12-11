@@ -171,6 +171,18 @@ h3 {
     align-items: center;
 }
 
+.logo-header {
+    grid-column-start: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-header-img {
+    width: 60%;
+    margin-top: 12px;
+}
+
 .back {
     grid-column-start: 1;
     display: flex;
@@ -512,6 +524,13 @@ h3 {
     font-family: "Lato";
     width: 355px;
     margin: 0 10px 0 10px;
+}
+
+/*schedule page*/
+
+.schedule-img {
+    width: 100%;
+    margin-top: 50px;
 }
 
 /*write a post*/
