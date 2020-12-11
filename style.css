@@ -526,13 +526,6 @@ h3 {
     margin: 0 10px 0 10px;
 }
 
-/*schedule page*/
-
-.schedule-img {
-    width: 100%;
-    margin-top: 50px;
-}
-
 /*write a post*/
 
 .content-write-post {
@@ -587,6 +580,50 @@ h3 {
     grid-column-start: 2;
     grid-row-start: 5;
 }
+
+/*schedule page*/
+
+.schedule-img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+/*challenge page*/
+
+.content-challenges {
+    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: 10px auto 10px;
+    grid-template-rows: 307px 10px 240px 10px 50px;
+}
+
+#demo {
+    grid-column-start: 2;
+    text-align: center;
+    font-size: 80px;
+    margin-top: 0px;
+    padding: 45px;
+    color: var(--dark-green);
+}
+
+.challenge-description {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    background-color: var(--light-green);
+    border-radius: 18px;
+    padding: 10px 20px 10px 20px;
+}
+
+.challenge-button {
+    grid-column-start: 2;
+    grid-row-start: 5;
+    background-color: var(--dark-green) !important;
+}
+
+.green-text {
+    color: var(--dark-green);
+}
+
 
 /*----READ MORE-----*/
 

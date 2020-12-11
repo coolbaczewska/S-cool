@@ -1,3 +1,6 @@
+
+//READ MORE
+
 function myFunction() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
@@ -32,6 +35,8 @@ function myFunction1() {
 }
 
 
+//MODAL FOR PHOTO GALLERY
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -52,3 +57,5 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+
